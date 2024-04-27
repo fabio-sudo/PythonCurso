@@ -14,3 +14,8 @@ listaB = ['a','b','c','d','e']
 listaC = listaA + listaB
 listaA.extend(listaB)#Adiciona os valores da lista B na lista A
 print(listaC)
+
+#Exibir lista com * como se ele usasse um print para cada elemento da lista
+print(*listaA)
+#ou
+print(listaA)

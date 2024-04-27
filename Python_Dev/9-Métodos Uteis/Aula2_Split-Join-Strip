@@ -1,0 +1,27 @@
+"""
+split e join com list e str
+split - divide uma string (list)
+join - une uma string
+strip - Remove os espaços
+append junta valores em uma lista
+"""
+import os
+os.system('cls')
+frase = 'Olha só que, coisa interessante'
+lista_frases = frase.split(',')
+
+print(lista_frases[0])
+print(10*'-')
+
+novalista = []
+#utilizando um for
+for i, frase in enumerate(lista_frases):
+    novalista.append(lista_frases[i])
+    print(lista_frases[i].strip())
+#Exibe com append
+print(10*'-')
+print(novalista)
+#Une strings
+print(10*'-')
+novalista_unida = ' -'.join(novalista)
+print(novalista_unida)
