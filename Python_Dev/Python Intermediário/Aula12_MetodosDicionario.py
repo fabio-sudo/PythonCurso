@@ -1,8 +1,28 @@
+p1 = {
+    'nome': 'Steve',
+    'sobrenome': 'Jobs',
+}
+
+#Caso nome estiver vazio exibe uma menssagem
+print(p1.get('nome','Não tem nome'))
+
+#remove item do dicionário
+nome = p1.pop('nome')
+print(nome)
+print(p1)
+
+#Lista de dicionários
+lista = [['nome', 'novo valor'], ['idade', 30]]
+p1.update(lista)
+print(p1)
+
+
 pessoa = {
     'nome': 'Fábio Henrique',
     'sobrenome': 'Trevezane',
     'idade': 32,
 }
+
 
 # setdefault - adiciona uma chave com um valor padrão se a chave não existe
 pessoa.setdefault('idade', 0)
